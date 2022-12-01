@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Hoja de vida</title>
+</head>
+<body>
+    <h1>Hoja de vida</h1>
+    <div class="file">Subir foto
+        <input class="foto" type="file" name="foto" hidden="true">
+    </div>
+    <form class="formulario" action="agregar.php">
+        <h3>Datos personales</h3>
+        <div class="contenedor">
+            <input class="entradaTexto" type="text" placeholder="primer nombre">
+            <input class="entradaTexto" type="text" placeholder="segundo nombre">
+            <input class="entradaTexto" type="text" placeholder="primer apellido">
+            <input class="entradaTexto" type="text" placeholder="segundo apellido">
+            
+            <div class="sub-contenedor">
+                <div class="sub-contenedor--2">Fecha de nacimiento</div>
+                <input type="date">
+            </div>
+            
+
+            <div class="sub-contenedor">
+                <div class="sub-contenedor--2">
+                    CC
+                    <input type="radio" name="sexo" value="CC">
+                    CE
+                    <input type="radio" name="sexo" value="CE">
+                    PASS
+                    <input type="radio" name="sexo" value="Pass">
+                </div>
+                <input class="cedula" type="text" placeholder="Numero de cedula">
+            </div>
+
+            <div class="sub-contenedor">
+                <div class="sub-contenedor--2">
+                    M
+                    <input type="radio" name="sexo" value="M">
+                    F
+                    <input type="radio" name="sexo" value="F">
+                    OTRO
+                    <input type="radio" name="sexo" value="OTRO">
+                </div>
+            </div>
+
+            <div class="sub-contenedor">Ciudad
+                <select name="ciudad">
+                    <option >Pasto</option>
+                    <option >Cali</option>
+                    <option >Medellin</option>
+                    <option >Bogotá</option>
+                    <option >Barranquilla</option>
+                </select>
+            </div>  
+        </div>
+
+        <h3>Formaciòn academica</h3>
+        <div class="contenedor">
+            <div class="sub-contenedor">
+                <div class="sub-contenedor--2">Educacion</div>
+                <select class="educacion" name="educacion">
+                    <option >bachiller</option>
+                    <option >Tecnico</option>
+                    <option >Tecnologo</option>
+                    <option >PRofesional</option>
+                </select>
+                
+            </div>
+            <div class="sub-contenedor">
+                <div class="sub-contenedor--2">Instituto</div> 
+                <input class="entradaTexto" type="text" placeholder="Instituto">
+            </div>
+        </div>
+
+        <h3>Manejo de idiomas</h3>
+        <div class="contenedor">
+            <div class="sub-contenedor">
+                <div class="sub-contenedor--2">Idiomas</div>
+                <input class="entradaTexto" type="text" placeholder="Idioma">
+            </div>
+            <div class="sub-contenedor">
+                <div class="sub-contenedor--2">Nivel</div>
+                <select name="nivelIdioma">
+                    <option >1</option>
+                    <option >2</option>
+                    <option >3</option>
+                    <option >4</option>
+                    <option >5</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

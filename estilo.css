@@ -1,0 +1,108 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 50px;
+}
+
+h1{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+h3{
+    flex-basis: 100%;
+    text-align: center;
+}
+.file{
+    display: flex;
+    background-color: rgb(255, 243, 235);
+    color: rgb(71, 71, 71);
+    cursor: pointer;
+    font-size: 14px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding:20px 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 85px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.file .foto{
+    opacity: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.formulario{
+    background-color: rgb(245, 229, 218);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+
+}
+
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    border: 5px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.entradaTexto{
+    flex-basis: 40%;
+    width: 50px;
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 123, 100);
+}
+
+input{
+    flex-basis: 100%;
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid tomato;
+    border-radius: 10px;
+}
+
+.sub-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 40%;
+    margin: 20px;
+    border: none;
+}
+
+.sub-contenedor--2{
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+input[type="radio"]{
+    border: none;
+
+}
+
+select{
+    border: none;
+    flex-basis: 100%;
+    height: 30px;
+    border-radius: 10px;
+}
